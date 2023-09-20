@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/thy/Documents/SRP_GuideTheRoboticArm/main.cpp" "/home/thy/Documents/SRP_GuideTheRoboticArm/build/CMakeFiles/srp.dir/main.cpp.o"
+  "/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.cpp" "/home/thy/Documents/SRP_GuideTheRoboticArm/build/CMakeFiles/srp.dir/src/NumDetector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

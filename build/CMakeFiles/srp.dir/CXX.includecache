@@ -6,15 +6,23 @@
 
 #IncludeRegexTransform: 
 
+../include/NumDetector.h
+opencv2/opencv.hpp
+-
+iostream
+-
+
 /home/thy/Documents/SRP_GuideTheRoboticArm/main.cpp
 opencv2/opencv.hpp
 -
 iostream
 -
-algorithm
--
-time.h
--
+NumDetector.h
+/home/thy/Documents/SRP_GuideTheRoboticArm/NumDetector.h
+
+/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.cpp
+NumDetector.h
+/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.h
 
 /usr/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

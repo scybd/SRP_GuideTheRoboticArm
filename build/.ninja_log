@@ -1,0 +1,4 @@
+# ninja log v5
+0	1661	1695217381694777462	CMakeFiles/srp.dir/main.cpp.o	36c40285d7dbfcc1
+0	1738	1695217381770774581	CMakeFiles/srp.dir/src/NumDetector.cpp.o	ead43642f03b4651
+1738	1956	1695217381986766392	srp	37d2bb1ee2e5e407

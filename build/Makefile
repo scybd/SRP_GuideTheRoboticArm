@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/NumDetector.o: src/NumDetector.cpp.o
+
+.PHONY : src/NumDetector.o
+
+# target to build an object file
+src/NumDetector.cpp.o:
+	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/src/NumDetector.cpp.o
+.PHONY : src/NumDetector.cpp.o
+
+src/NumDetector.i: src/NumDetector.cpp.i
+
+.PHONY : src/NumDetector.i
+
+# target to preprocess a source file
+src/NumDetector.cpp.i:
+	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/src/NumDetector.cpp.i
+.PHONY : src/NumDetector.cpp.i
+
+src/NumDetector.s: src/NumDetector.cpp.s
+
+.PHONY : src/NumDetector.s
+
+# target to generate assembly for a file
+src/NumDetector.cpp.s:
+	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/src/NumDetector.cpp.s
+.PHONY : src/NumDetector.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/NumDetector.o"
+	@echo "... src/NumDetector.i"
+	@echo "... src/NumDetector.s"
 .PHONY : help
 
 
