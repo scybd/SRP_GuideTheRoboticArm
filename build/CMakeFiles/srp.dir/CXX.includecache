@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/NumCal.h
+opencv2/opencv.hpp
+-
+iostream
+-
+NumDetector.h
+../include/NumDetector.h
+
 ../include/NumDetector.h
 opencv2/opencv.hpp
 -
@@ -19,10 +27,12 @@ iostream
 -
 NumDetector.h
 /home/thy/Documents/SRP_GuideTheRoboticArm/NumDetector.h
+NumCal.h
+/home/thy/Documents/SRP_GuideTheRoboticArm/NumCal.h
 
-/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.cpp
-NumDetector.h
-/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.h
+/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumCal.cpp
+NumCal.h
+/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumCal.h
 
 /usr/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

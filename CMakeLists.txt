@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 3.10)
 project(srp CXX)
 
 add_executable(${PROJECT_NAME}
-    main.cpp
+    "main.cpp"
+    "src/NumDetector.cpp"
+    "src/NumCal.cpp"
 )
 
 find_package(OpenCV 4 REQUIRED)

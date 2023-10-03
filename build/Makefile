@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/NumCal.o: src/NumCal.cpp.o
+
+.PHONY : src/NumCal.o
+
+# target to build an object file
+src/NumCal.cpp.o:
+	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/src/NumCal.cpp.o
+.PHONY : src/NumCal.cpp.o
+
+src/NumCal.i: src/NumCal.cpp.i
+
+.PHONY : src/NumCal.i
+
+# target to preprocess a source file
+src/NumCal.cpp.i:
+	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/src/NumCal.cpp.i
+.PHONY : src/NumCal.cpp.i
+
+src/NumCal.s: src/NumCal.cpp.s
+
+.PHONY : src/NumCal.s
+
+# target to generate assembly for a file
+src/NumCal.cpp.s:
+	$(MAKE) -f CMakeFiles/srp.dir/build.make CMakeFiles/srp.dir/src/NumCal.cpp.s
+.PHONY : src/NumCal.cpp.s
+
 src/NumDetector.o: src/NumDetector.cpp.o
 
 .PHONY : src/NumDetector.o
@@ -189,6 +216,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/NumCal.o"
+	@echo "... src/NumCal.i"
+	@echo "... src/NumCal.s"
 	@echo "... src/NumDetector.o"
 	@echo "... src/NumDetector.i"
 	@echo "... src/NumDetector.s"
