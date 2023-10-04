@@ -34,6 +34,10 @@ NumCal.h
 NumCal.h
 /home/thy/Documents/SRP_GuideTheRoboticArm/src/NumCal.h
 
+/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.cpp
+NumDetector.h
+/home/thy/Documents/SRP_GuideTheRoboticArm/src/NumDetector.h
+
 /usr/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
 /usr/include/opencv4/opencv2/opencv2/core.hpp
