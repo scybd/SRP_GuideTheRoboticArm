@@ -16,3 +16,7 @@
 ## Version 0.3 - Octorber 3, 2023
 ### Changed
 - 全部用类封装
+
+## Version 0.4 - Octorber 4, 2023
+### Added
+- 目标位姿解算

@@ -61,7 +61,6 @@ public:
 
     // 综合以上三步，得出待匹配的对象
     vector<NumObject> allInOne();
-    vector<vector<Point>> t();
 
     friend class NumCal;
 private:

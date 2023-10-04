@@ -76,7 +76,7 @@ void FrameNumDetector::preprocess()
 {
     // 相机图像预处理
 	cvtColor(frame, frame, COLOR_BGR2HSV);
-	inRange(frame, Scalar(0, 0, 0), Scalar(179, 255, 108), frame);
+	inRange(frame, Scalar(0, 0, 0), Scalar(179, 255, 180), frame);
 	Mat element1 = getStructuringElement(MORPH_RECT, Size(1, 1));	
   	erode(frame, frame, element1);
 	Mat element2 = getStructuringElement(MORPH_RECT, Size(3, 3));
@@ -138,5 +138,3 @@ vector<NumObject> FrameNumDetector::allInOne()
     getNormNum();
     return frameNumNorm;
 }
-
-vector<vector<Point>> FrameNumDetector::t() {return frameContours;}
