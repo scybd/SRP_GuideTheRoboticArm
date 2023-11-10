@@ -65,12 +65,21 @@ vector<Mat> TemplateNumDetector::allInOne()
 }
 
 
-FrameNumDetector::FrameNumDetector(Mat img)
+FrameNumDetector::FrameNumDetector()
 {
-    frame = img;
+    
 }
 
 FrameNumDetector::~FrameNumDetector() {}
+
+void FrameNumDetector::setFrame(Mat frame)
+{
+	frameContours.clear();
+	frameHierarchy.clear();
+	frameNum.clear();
+	frameNumNorm.clear();
+	this->frame = frame;
+}
 
 void FrameNumDetector::preprocess()
 {

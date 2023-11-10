@@ -47,8 +47,11 @@ private:
 class FrameNumDetector
 {
 public:
-    FrameNumDetector(Mat img);
+    FrameNumDetector();
     ~FrameNumDetector();
+
+    // 装载图像
+    void setFrame(Mat frame);
 
     // 预处理
     void preprocess();

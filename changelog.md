@@ -20,3 +20,7 @@
 ## Version 0.4 - Octorber 4, 2023
 ### Added
 - 目标位姿解算
+
+## Version 0.5 - November 10, 2023
+### Changed
+- 将TemplateNumDetector和FrameNumDetector实例化到堆上
