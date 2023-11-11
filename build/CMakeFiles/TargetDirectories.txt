@@ -1,3 +1,0 @@
-/home/thy/Documents/SRP_GuideTheRoboticArm/build/CMakeFiles/rebuild_cache.dir
-/home/thy/Documents/SRP_GuideTheRoboticArm/build/CMakeFiles/edit_cache.dir
-/home/thy/Documents/SRP_GuideTheRoboticArm/build/CMakeFiles/srp.dir
