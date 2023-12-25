@@ -24,3 +24,7 @@
 ## Version 0.5 - November 10, 2023
 ### Changed
 - 将TemplateNumDetector和FrameNumDetector实例化到堆上
+
+## Version 0.6 - December 25, 2023
+### Added
+- 串口通信

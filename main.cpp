@@ -3,10 +3,11 @@
 #include <time.h>
 #include "NumDetector.h"
 #include "NumCal.h"
+#include "Uart.h"
 using namespace cv;
 using namespace std; 
 
-
+int serialPort;
 int main()
 {
 	Mat numTemplate = imread("/home/thy/Documents/SRP_GuideTheRoboticArm/template.png", 0);
@@ -22,13 +23,17 @@ int main()
 	NumCal numcal;
 
 	// 图片来源
-	VideoCapture cap(0);
-	cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
-    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
-    cap.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
-	// VideoCapture video("/home/thy/Documents/SRP_GuideTheRoboticArm/2222.avi");
+	// VideoCapture cap(0);
+	// cap.set(cv::CAP_PROP_FRAME_WIDTH, 640);
+    // cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
+    // cap.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
+	VideoCapture cap("/home/thy/Documents/SRP_GuideTheRoboticArm/2222.avi");
 	// 定义输出视频流 
 	// VideoWriter out("out.mp4", VideoWriter::fourcc('X', '2', '6', '4'), 30, Size(640, 480));
+
+
+	if (uartInit(serialPort)) {cout << "串口初始化成功" << endl;}
+	else {cout << "串口初始化失败" << endl;}
 
 	// 计时变量
 	clock_t start,end;

@@ -1,4 +1,5 @@
 #include "NumCal.h"
+#include "Uart.h"
 
 int a[4] = { 4, 3, 2, 1 };
 
@@ -8,6 +9,8 @@ Mat cam_mat = (Mat_<double>(3, 3) << 366.7, 0.0, 292.4, 0.0, 367, 256.4, 0.0, 0.
 Mat dis_coeff = (Mat_<double>(4, 1) << 0.0767, -0.0722, 0.0, 0.0);               // 畸变矩阵
 Mat r_vector = Mat::zeros(3, 1, CV_64FC1);  //旋转向量初始化
 Mat t_vector = Mat::zeros(3, 1, CV_64FC1);  //平移向量初始化
+
+extern int serialPort;
 
 NumCal::NumCal()
 {
@@ -88,6 +91,10 @@ Mat NumCal::calPos(Mat img)
 		putText(img, "x:"+to_string(tx)+"cm", Point(0,20), 1, 2, Scalar(20, 120, 20), 2);
 		putText(img, "y:"+to_string(ty)+"cm", Point(0,40), 1, 2, Scalar(20, 120, 20), 2);
 		putText(img, "z:"+to_string(tz)+"cm", Point(0,60), 1, 2, Scalar(20, 120, 20), 2);
+		
+		cout << "in NumCal serialPort=" << serialPort << endl;
+		unsigned char data[] = {(unsigned char)dis, 33};
+		sendData(serialPort, data, sizeof(data));
 	}
 	else
 	{
