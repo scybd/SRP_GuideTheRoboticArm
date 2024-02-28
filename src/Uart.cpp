@@ -16,8 +16,8 @@ bool uartInit(int &serialPort)
         std::cerr << "Error from tcgetattr" << std::endl;
         return false;
     }
-    cfsetospeed(&tty, B9600);
-    cfsetispeed(&tty, B9600);
+    cfsetospeed(&tty, B115200);
+    cfsetispeed(&tty, B115200);
     tty.c_cflag &= ~PARENB;
     tty.c_cflag &= ~CSTOPB;
     tty.c_cflag &= ~CSIZE;

@@ -10,14 +10,17 @@ add_executable(${PROJECT_NAME}
 )
 
 find_package(OpenCV 4 REQUIRED)
+find_package(apriltag REQUIRED)
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE
         ${OpenCV_INCLUDE_DIRS}
+        ${apriltag_INCLUDE_DIRS}
         "include"
 )
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
         ${OpenCV_LIBS} 
+        apriltag
 )

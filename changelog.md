@@ -28,3 +28,7 @@
 ## Version 0.6 - December 25, 2023
 ### Added
 - 串口通信
+
+## Version 0.7 - February 28, 2024
+### Added
+- readme.md

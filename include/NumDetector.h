@@ -54,7 +54,7 @@ public:
     void setFrame(Mat frame);
 
     // 预处理
-    void preprocess();
+    Mat preprocess();
 
     // 获取其中可能的数字
     void getNum();
@@ -63,7 +63,7 @@ public:
     void getNormNum();
 
     // 综合以上三步，得出待匹配的对象
-    vector<NumObject> allInOne();
+    vector<NumObject> allInOne(Mat& test);
 
     friend class NumCal;
 private:
@@ -76,4 +76,5 @@ private:
     vector<NumObject> frameNum;         //　目标数字的小图片
     vector<NumObject> frameNumNorm;     //　归一化后的目标数字的小图片
 };
+
 #endif

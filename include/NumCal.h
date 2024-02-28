@@ -22,10 +22,14 @@ public:
 
     Mat calPos(Mat img);
 
+    // 只输出目标数字的xy像素坐标，用于对准
+    Mat NumXY(Mat img);
+
 private:
     vector<Point3f> num3d;      // 数字的真实坐标，以其中心为原点
     vector<Point2f> num2d;      // 数字在图像中的坐标
-    bool doPos;
+    bool doPos;                 // 是否开启位姿解算的标志位
+    bool doUart;                // 是否串口发送消息的标志位
 
 };
 
