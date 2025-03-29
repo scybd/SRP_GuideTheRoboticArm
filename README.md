@@ -7,6 +7,7 @@
 - 代码使用的是轮询的方式运行，由于当时时间匆忙，aproilTag部分的代码未做二次封装
 - 根目录下的**template.png**为模板图片，**test.mp4**为在工位录的测试视频
 - 上位机使用的是树莓派4B，编译源码安装的OpenCV，安装过程可见[我的视频](https://www.bilibili.com/video/BV1eM411o72k?vd_source=e67cc43f2e8443b722a5f50ef79db03e)
+- 演示视频见我同学b站发的[视频](https://www.bilibili.com/video/BV12g4y1m734/?share_source=copy_web&vd_source=e67cc43f2e8443b722a5f50ef79db03e)
 
 ## 使用方式
 - 在工程根目录下：`mkdir build`
